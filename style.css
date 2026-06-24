@@ -106,12 +106,7 @@ h6 {
   --font-bold: 700;
 }
 
-/* craft */
-img {
-  width: 20rem;
-  height: auto;
-}
-
+/* header */
 header {
   display: flex;
   max-width: 100vw;
@@ -140,6 +135,16 @@ a {
   position: relative;
 }
 
+.header_img_container img {
+  width: 20rem;
+  height: auto;
+}
+
+.header_img_container {
+  min-width: 20rem;
+  height: fit-content;
+}
+
 .overlay {
   position: absolute;
   bottom: 0;
@@ -157,4 +162,32 @@ a {
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0)
   );
+}
+
+/* section */
+
+section {
+  padding: 0 2rem;
+  min-height: calc(1vh - 5rem);
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  max-width: 100vw;
+  gap: 2rem;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70%;
+  background-color: var(--color-surface);
+}
+
+.my_work {
+  margin: 2rem 4rem;
 }
