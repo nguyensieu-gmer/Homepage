@@ -296,13 +296,14 @@ footer {
   background-color: var(--color-primary);
 }
 
-.social_media {
+footer .social_media {
   display: flex;
   gap: 2rem;
   font-size: var(--bigger-font-size);
+  width: fit-content;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .grid_container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
